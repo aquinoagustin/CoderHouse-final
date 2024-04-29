@@ -1,17 +1,20 @@
-<div>
+<div style="width:500px">
     <h1>Login</h1>
     <form id="loginForm">
+        <div class="mb-3">
         <label>Email</label>
-        <input name="email">
-        <br/>
+        <input name="email"  class="form-control">
+        </div>
+        <div class="mb-3">
         <label for="">Contraseña</label>
-        <input name="password" type="password">
-        <input type="submit">
+        <input name="password" type="password"  class="form-control">
+        </div>
+        <input type="submit" class="btn btn-primary">
     </form>
     <p>¿No estas registrado? <a href="/register">Registrate aquí</a></p>
     <p> ¿No estás registrado? <a href="/api/sessions/github">Entrar con GitHub</a></p>
     <a href="/forgot-password">
-    <button>Restablecer constraseña</button>
+    <button class="btn btn-warning">Restablecer constraseña</button>
 </a>
 </div>
 <script src="/js/login.js"></script>
